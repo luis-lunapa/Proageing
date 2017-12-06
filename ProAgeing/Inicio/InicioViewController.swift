@@ -319,7 +319,7 @@ struct HomeResumes {
 struct InicioTableSource {
    // let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    lazy var other: [HomeResumes] = [HomeResumes(title: "Última frecuancia registrada ❤️",
+    lazy var other: [HomeResumes] = [HomeResumes(title: "Última frecuencia registrada ❤️",
                                                   identifier: "H",
                                                   action: .heart),
                                      HomeResumes(title: "Próximo recordatorio 🗓",

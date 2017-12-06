@@ -220,7 +220,7 @@ class RegistroFormController: FormViewController {
                                     
                                     AlertRow<String>() {
                                         $0.title = "Nombre del Padecimiento:"
-                                        $0.options = ["Diebetes", "Hipertensión Arterial", "Artritis", "Osteoporosis", "Alz-Heimer", "Parkinson", "Demencia", "Sordera"]
+                                        $0.options = ["Diebetes I","Diabetes II", "Hipertensión Arterial", "Artritis", "Osteoporosis", "Alz-Heimer", "Parkinson", "Demencia", "Sordera"]
                                         $0.onChange({ row in
                                             self.padec = self.padec + row.value! + ", "
                                             print(self.padec)
