@@ -17,7 +17,7 @@ class NuevoRecordatorioViewController: FormViewController {
     
     private var titulo: String!
     private var alerta: Date?
-    private var notas: String? = ""
+    private var notas: String! = ""
     
 
     
@@ -169,6 +169,7 @@ class NuevoRecordatorioViewController: FormViewController {
             
             let newReminder = EKReminder(eventStore: eventStore)
             newReminder.title = self.titulo
+            newReminder.notes = self.notas
             //newReminder.dueDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: self.alerta!)
             var alarm = EKAlarm(absoluteDate: self.alerta!)
             newReminder.addAlarm(alarm)

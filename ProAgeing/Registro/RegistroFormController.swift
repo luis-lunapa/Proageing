@@ -30,10 +30,12 @@ class RegistroFormController: FormViewController {
     var peso: Double! = 0.0
     var altura: Int! = 0
     var padec: String! = ""
+    
+    var padecimientos: Array<String> = []
     var ready = false
     
     //static let api: String = "http://localhost/xtechmx.tk/Proageing/API/register.php" //PRUEBA
-    static let api = "http://xtechmx.tk/Proageing/API/register.php"  //FUNCIONAL
+    static let api = "https://xtechmx.tk/Proageing/API/register.php"  //FUNCIONAL
     
     
     override func viewDidLoad() {
@@ -216,28 +218,38 @@ class RegistroFormController: FormViewController {
                                     }
                                 }
                                 
-                                $0.multivaluedRowToInsertAt = { index in
+                               $0.multivaluedRowToInsertAt = { index in
                                     
-                                    AlertRow<String>() {
+                                   /* AlertRow<String>() {
                                         $0.title = "Nombre del Padecimiento:"
-                                        $0.options = ["Diebetes I","Diabetes II", "Hipertensión Arterial", "Artritis", "Osteoporosis", "Alz-Heimer", "Parkinson", "Demencia", "Sordera"]
+                                        $0.options = ["Diabetes I","Diabetes II", "Hipertensión Arterial", "Artritis", "Osteoporosis", "Alz-Heimer", "Parkinson", "Demencia", "Sordera", "Otro"]
                                         $0.onChange({ row in
+                                            
+                                            
+                                         
                                             self.padec = self.padec + row.value! + ", "
                                             print(self.padec)
                                         })
                                         
-                                    }
+                                    }*/
+                                
+                                
+                                
+                                NameRow() {
+                                    $0.title = "Nombre del Padecimiento"
+                                    $0.onChange({ row in
+                                        
+                                        
+                                        self.padec = row.value
+                                        self.padecimientos.append(row.value!)
+                                        print(self.padecimientos)
+                                    })
                                     
                                 }
-                                
-                                print("FORMMMMM >>>>>>>>>> \(form.values())")
-                                
-                                /*  $0 <<< NameRow() {
-                                 $0.title = "Enferdddd"
-                                 
-                                 }*/
-                                
-                                
+                                    
+                                }
+                        
+
             }
             
             /* form +++
@@ -288,7 +300,7 @@ class RegistroFormController: FormViewController {
         
         
         
-    }
+}
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -432,6 +444,38 @@ class RegistroFormController: FormViewController {
         
         _ = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(NuevoMedicamentoFormViewController.dismissAlert), userInfo: nil, repeats: true)
         
+        
+    }
+    
+    func obtenerOtroPad() -> String? {
+        var padec: String?
+        
+        let alert = UIAlertController(title: "Nombre del Padecimiento", message: "", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.text = ""
+        }
+       
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .destructive, handler: nil))
+        
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0]
+           
+            
+            
+            padec = textField?.text!
+            
+         
+            
+        }))
+        
+        
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+        
+        return padec
         
     }
     

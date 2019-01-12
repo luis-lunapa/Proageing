@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private var password: String!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     //static let api = "http://localhost/xtechmx.tk/Proageing/API/login.php?" //PRUEBA
-    static let api = "http://xtechmx.tk/Proageing/API/login.php?"  //FUNCIONAL
+    static let api = "https://xtechmx.tk/Proageing/API/login.php?"  //FUNCIONAL
     
     
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passTxt.isSecureTextEntry = true
         userTxt.setBottomLine(borderColor: .gray)
         passTxt.setBottomLine(borderColor: .gray)
-       
+       userTxt.set
        
 
         //tableView.backgroundView = UIImageView(image: UIImage(named: "640x1136.png"))
@@ -87,7 +87,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         if self.email != "" || self.password != "" {
             if self.email == "admin" && self.password == "admin" {
-               let defUS = Usuario(id: 117, email: "default@mymail.com", pass: "Hh@", padecimientos: "Artritis", name: "Juan Pérez Pérez", fNacimiento: "1954-08-24", sex: "M", image: "defaultUser", medicamento: "", tipoSangre: "A+", altura: 160.0, peso: 64.500)
+               let defUS = Usuario(id: 117,
+                                   email: "default@mymail.com",
+                                   pass: "Hh@",
+                                   padecimientos: "Artritis",
+                                   name: "Juan Pérez Pérez",
+                                   fNacimiento: "1954-08-24",
+                                   sex: "M",
+                                   image: "defaultUser",
+                                   tipoSangre: "A+",
+                                   altura: 160.0,
+                                   peso: 64.500)
                 appDelegate.usuario = defUS
                 performSegue(withIdentifier: "loginSegue", sender: self)
                
@@ -212,7 +222,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        let user = Usuario(id: id, email: email, pass: contrasena, padecimientos: padecimientos, name: nombre, fNacimiento: nacimiento, sex: sexo, image: imagen, medicamento: medicamento, tipoSangre: sangre, altura: altura, peso: peso)
+        let user = Usuario(id: id, email: email, pass: contrasena, padecimientos: padecimientos, name: nombre, fNacimiento: nacimiento, sex: sexo, image: imagen, tipoSangre: sangre, altura: altura, peso: peso)
         
         appDelegate.usuario = user
         getMeds()

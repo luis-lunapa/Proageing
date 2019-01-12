@@ -21,7 +21,7 @@ class Usuario: NSObject, NSCoding {
     let sexo: String!
     var contacts = [Contacto]()
     var favContacts = [Contacto]()
-    var padecimientos: String!
+    var padecimientos: String?
     let sangre: String!
     var altura: Double!
     var peso: Double!
@@ -32,7 +32,7 @@ class Usuario: NSObject, NSCoding {
     var savedInDB = false
     
 
-    init (id: Int, email: String, pass: String, padecimientos: String, name: String, fNacimiento: String, sex: String, image: String, medicamento: String, tipoSangre: String, altura: Double, peso: Double) {
+    init (id: Int, email: String, pass: String, padecimientos: String, name: String, fNacimiento: String, sex: String, image: String, tipoSangre: String, altura: Double, peso: Double) {
         
         //IMPLEMENTAR PADECIMIENTOS EN ARREGLO
         //IMPLEMENTAR FNACIMIENTO EN DATE
@@ -47,7 +47,7 @@ class Usuario: NSObject, NSCoding {
             //self.imagen = UIImage(named: image)
         }
         self.padecimientos = padecimientos
-        Usuario.getMedicamento(from: medicamento)
+       // Usuario.getMedicamento(from: medicamento)
         self.sangre = tipoSangre
         self.altura = altura
         self.peso = peso
