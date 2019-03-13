@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 import Eureka
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
@@ -19,7 +18,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private var password: String!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     //static let api = "http://localhost/xtechmx.tk/Proageing/API/login.php?" //PRUEBA
-    static let api = "https://xtechmx.tk/Proageing/API/login.php?"  //FUNCIONAL
+    //static let api = "https://xtechmx.tk/Proageing/API/login.php?"  //FUNCIONAL
     
     
     override func viewDidLoad() {
@@ -33,9 +32,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         userTxt.tag = 0
         passTxt.tag = 1
         passTxt.isSecureTextEntry = true
-        userTxt.setBottomLine(borderColor: .gray)
-        passTxt.setBottomLine(borderColor: .gray)
-       userTxt.set
+       
+      
        
 
         //tableView.backgroundView = UIImageView(image: UIImage(named: "640x1136.png"))
@@ -52,6 +50,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
         }
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        userTxt.setBottomLine(borderColor: .gray)
+        passTxt.setBottomLine(borderColor: .gray)
     }
     
     func goToHome() {
@@ -131,7 +135,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var loginError: Bool!
     
         
-        let complete = LoginViewController.api + "email=" + self.email + "&pass=" + self.password
+        let complete = "LoginViewController.api" + "email=" + self.email + "&pass=" + self.password
         
         let jsonData: NSData! =  NSData(contentsOf: NSURL(string: complete)! as URL)
         if (jsonData == nil) {

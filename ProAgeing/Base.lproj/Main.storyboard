@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kt2-Uk-XWB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kt2-Uk-XWB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -167,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XeA-2R-atq">
-                                <rect key="frame" x="58" y="299" width="317" height="40"/>
+                                <rect key="frame" x="58" y="299" width="301" height="40"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -178,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Correo electrónico" clearsOnBeginEditing="YES" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3Wr-Su-odt">
-                                <rect key="frame" x="58" y="213" width="317" height="40"/>
+                                <rect key="frame" x="58" y="213" width="301" height="40"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                             </textField>
@@ -194,7 +193,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwT-Gp-QY7">
-                                <rect key="frame" x="71" y="359" width="232" height="69"/>
+                                <rect key="frame" x="71.5" y="359" width="232" height="69"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <state key="normal" title="Entrar" backgroundImage="buttonLogin">
                                     <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -219,7 +218,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProAgeing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-WD-Bit">
-                                <rect key="frame" x="63" y="111" width="248" height="58"/>
+                                <rect key="frame" x="63" y="111" width="249" height="58"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -246,7 +245,7 @@
                             <constraint firstItem="edN-rW-rfT" firstAttribute="top" secondItem="Uqk-ow-svM" secondAttribute="bottom" constant="46" id="XUP-Do-est"/>
                             <constraint firstItem="DlF-WD-Bit" firstAttribute="leading" secondItem="5yC-lf-VbV" secondAttribute="leadingMargin" constant="47" id="YS5-ex-2h1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1TU-4h-rOD" secondAttribute="trailing" constant="54" id="Zsz-YO-8Np"/>
-                            <constraint firstItem="3Wr-Su-odt" firstAttribute="trailing" secondItem="5yC-lf-VbV" secondAttribute="trailingMargin" constant="16" id="ftV-lX-e1b"/>
+                            <constraint firstItem="3Wr-Su-odt" firstAttribute="trailing" secondItem="5yC-lf-VbV" secondAttribute="trailingMargin" id="ftV-lX-e1b"/>
                             <constraint firstItem="DwT-Gp-QY7" firstAttribute="centerX" secondItem="5yC-lf-VbV" secondAttribute="centerX" id="fzZ-R5-NJV"/>
                             <constraint firstItem="edN-rW-rfT" firstAttribute="top" secondItem="XeA-2R-atq" secondAttribute="top" id="mxA-tH-ELK"/>
                             <constraint firstItem="Uqk-ow-svM" firstAttribute="leading" secondItem="5yC-lf-VbV" secondAttribute="leadingMargin" constant="-6" id="nMS-VV-LvP"/>
@@ -756,33 +755,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YPP-4w-Ky1">
-                                            <rect key="frame" x="8" y="6" width="60" height="60"/>
+                                            <rect key="frame" x="8" y="6" width="60.5" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="3Sa-qj-VRJ"/>
                                                 <constraint firstAttribute="height" constant="60" id="bD4-WB-OOq"/>
                                                 <constraint firstAttribute="width" secondItem="YPP-4w-Ky1" secondAttribute="height" multiplier="32:35" constant="5.5714285714285765" id="rrK-JM-VMY"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-he-Baq">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Numero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-he-Baq">
                                             <rect key="frame" x="80" y="33" width="265" height="25"/>
                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-2I-Pyw">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-2I-Pyw">
                                             <rect key="frame" x="80" y="63" width="273" height="23"/>
                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiP-bx-MHF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiP-bx-MHF">
                                             <rect key="frame" x="80" y="0.0" width="273" height="32"/>
                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque aquí para llamar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwD-3Z-YJH">
-                                            <rect key="frame" x="283" y="22" width="92" height="48"/>
+                                            <rect key="frame" x="283" y="22" width="92" height="49.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="92" id="e8Z-eh-ua2"/>
                                             </constraints>
@@ -878,7 +877,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l16-bd-ZoE">
-                                            <rect key="frame" x="8" y="6" width="60" height="60"/>
+                                            <rect key="frame" x="8" y="6" width="60.5" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="l16-bd-ZoE" secondAttribute="height" multiplier="32:35" constant="5.5714285714285765" id="5HI-DB-RnL"/>
                                                 <constraint firstAttribute="height" constant="60" id="PaB-M3-GQ4"/>
@@ -1118,10 +1117,10 @@
         <image name="buttonLogin" width="232" height="69"/>
         <image name="defaultUser" width="512" height="512"/>
         <image name="home" width="30" height="30"/>
-        <image name="lock-Icon" width="1600" height="1600"/>
-        <image name="medicine" width="30" height="30"/>
+        <image name="lock-Icon" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="medicine" width="8.6400003433227539" height="8.6400003433227539"/>
         <image name="phone-book" width="30" height="30"/>
-        <image name="pill-1" width="512" height="512"/>
+        <image name="pill-1" width="46.36981201171875" height="46.36981201171875"/>
         <image name="plus-sign" width="29" height="30"/>
         <image name="reminder" width="30" height="30"/>
     </resources>

@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Eureka (4.3.1)
+  - IQKeyboardManagerSwift (6.0.4)
+  - PromiseKit (6.7.1):
+    - PromiseKit/CorePromise (= 6.7.1)
+    - PromiseKit/Foundation (= 6.7.1)
+    - PromiseKit/UIKit (= 6.7.1)
+  - PromiseKit/CorePromise (6.7.1)
+  - PromiseKit/Foundation (6.7.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.7.1):
+    - PromiseKit/CorePromise
+  - XLActionController (4.1.1):
+    - XLActionController/Core (= 4.1.1)
+  - XLActionController/Core (4.1.1)
+  - XLActionController/Youtube (4.1.1):
+    - XLActionController/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Eureka
+  - IQKeyboardManagerSwift (= 6.0.4)
+  - PromiseKit
+  - XLActionController
+  - XLActionController/Youtube
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Eureka
+    - IQKeyboardManagerSwift
+    - PromiseKit
+    - XLActionController
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
+  PromiseKit: ef376fb8b4e92edfeb66bd403b983eaa07fbde0c
+  XLActionController: d2ab12a967ae0fee0b4563b8d809c8fb13ebc636
+
+PODFILE CHECKSUM: 8e41a2afbefd8aaf1e485906c890fcd6e40e5261
+
+COCOAPODS: 1.6.0.beta.2
